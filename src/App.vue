@@ -1,32 +1,57 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <Face />
+    <About />
+    <Format />
+    <Tasks />
+    <Timeline />
+    <Judges />
+    <Plan />
+    <Location />
+    <Partners />
+    <Contacts />
   </div>
 </template>
+<script>
+import Face from "./components/Face";
+import About from "./components/About";
+import Format from "./components/Format";
+import Tasks from "./components/Tasks";
+import Timeline from "./components/Timeline";
+import Judges from "./components/Judges";
+import Plan from "./components/Plan";
+import Location from "./components/Location";
+import Partners from "./components/Partners";
+import Contacts from "./components/Contacts";
+export default {
+  components: {
+    Face,
+    About,
+    Format,
+    Tasks,
+    Timeline,
+    Judges,
+    Plan,
+    Location,
+    Partners,
+    Contacts
+  }
+};
+</script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  width: 100%;
+  height: 880%;
+  /* height: 9500px; */
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 </style>
